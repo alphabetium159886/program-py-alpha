@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-
+#EE的误差分析
 def Euler_Explicit(f, y0, h):
     t0 = 0
     tp = 5
@@ -34,9 +34,8 @@ y0 = -5
 
 #处理误差---
 error_list = []
-ha = np.arange(0.26, 0.7, 0.01)
-for h in np.arange(0.26, 0.7, 0.01):
-    
+ha = np.arange(0.26, 0.41, 0.01)
+for h in ha:
     y = Euler_Explicit(f, y0, h)
     x, e = error(f, y0, h)
     x = np.linspace(0, 5, len(y))
@@ -50,8 +49,6 @@ plt.ylabel('e[-1]')
 plt.title('Error vs. Step Size')
 plt.show() 
 #---0.33000000000000007 0.006333234725431014
-
-
 
 
 

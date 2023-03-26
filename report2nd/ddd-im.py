@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-
+#EIM的误差分析
 def Euler_Implicit(f, y0, a, b, h):
     n = round((b-a)/h)
     y = np.zeros(n+1)
