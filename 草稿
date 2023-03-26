@@ -43,10 +43,14 @@ $\left\{\begin{matrix}
 设等离子体的密度$n = 10^19 m^-3$，温度T = 1keV，计算带电粒子的平均动能和平均势能，并判断是否满足理想等离子体条件
 
 
-
-
-
-
+alphabetium159886
+toby1920@outlook.com
+ssh-keygen -t rsa -C "toby1920@outlook.com"
+git config --global user.name "alphabetium159886"
+git config --global user.email "toby1920@outlook.com"
+cd ~/.ssh
+ls
+//看是否存在 id_rsa 和 id_rsa.pub文件，如果存在，说明已经有SSH Key
 
 
 

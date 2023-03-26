@@ -23,10 +23,10 @@ def error(f, y0, a, b, h):
         return 20*np.exp(2*x)/(np.exp(2*x) - 10*x*np.exp(2*x) - 9)
 
     y_num = Euler_Implicit(f, y0, a, b, h)
-    x = np.arange(a, b + h, h)
-    e = y_num - y_exact(x[:-1])
+    x = np.arange(a, b + h, h)[:len(y_num)]
+    e = y_num - y_exact(x)
 
-    return x[:-1], e
+    return x, e
 
 
 def f(x, y):
@@ -41,8 +41,8 @@ h = 0.1
 y = Euler_Implicit(f, y0, a, b, h)
 
 error_list = []
-ha = np.arange(0.26, 0.7, 0.01)
-for h in np.arange(0.26, 0.7, 0.01):
+ha = np.arange(0.1, 0.7, 0.01)
+for h in np.arange(0.1, 0.7, 0.01):
     
     y = Euler_Implicit(f, y0, a, b, h)
     x, e = error(f, y0, a, b, h)
@@ -56,4 +56,3 @@ plt.xlabel('h')
 plt.ylabel('e[-1]')
 plt.title('Error vs. Step Size')
 plt.show() 
-
