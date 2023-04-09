@@ -58,11 +58,16 @@ ls
 
 
 
+求以下PDE的数值解
+$\frac{\partial T}{\partial t} = \kappa (\frac{\partial^2 T}{\partial x^2} + \frac{\partial^2 T}{\partial y^2})$
+上下左右四边分别有恒定温度：100，0，75，50（单位：摄氏温度）。设初始状态时铝板区域内的温度为0，$\kappa = 0.835$，求板的温度分布随时间的变化，
 
+求以下PDE的数值解
+$\frac{\partial T}{\partial t} = \kappa (\frac{\partial^2 T}{\partial x^2} + \frac{\partial^2 T}{\partial y^2})$
 
-
-
-
+初始条件区域内的温度为0（单位：摄氏温度）
+边界条件上下左右四边分别有恒定温度：100，0，75，50（单位：摄氏温度）
+求温度分布随时间的变化
 
 
 
