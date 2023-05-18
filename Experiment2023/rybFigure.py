@@ -47,7 +47,7 @@ plt.figure(figsize=(10, 6))
 for i, d in enumerate(data):
     plt.plot(d[:, 0], d[:, 1], color=colors[i], label=labels[i])
 
-    # 添加波峰、中心波长、半高宽和强度的信息
+    # 添加波峰、中心波长、半高宽和强度
     peak_value = peak_values[i]
     central_wavelength = central_wavelengths[i]
     half_width = half_widths[i]
